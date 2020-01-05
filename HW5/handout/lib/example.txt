@@ -1,0 +1,41 @@
+5.
+
+epoch=100 crossentropy(train): 0.498089616025
+epoch=100 crossentropy(test): 1.35803778786
+error(train): 0.112
+error(test): 0.43
+
+epoch=100 crossentropy(train): 0.130725551953
+epoch=100 crossentropy(test): 1.32223313023
+error(train): 0.014
+error(test): 0.35
+
+epoch=100 crossentropy(train): 0.0993218166221
+epoch=100 crossentropy(test): 1.40914228663
+error(train): 0.006
+error(test): 0.35
+
+epoch=100 crossentropy(train): 0.0868156065174
+epoch=100 crossentropy(test): 1.51880353487
+error(train): 0.006
+error(test): 0.37
+
+epoch=100 crossentropy(train): 0.0775316972875
+epoch=100 crossentropy(test): 1.60306064147
+error(train): 0.006
+error(test): 0.37
+
+
+6.
+
+The average train cross-entropy reduces with increased number of hidden units, but the average test cross-entropy
+first decreases but again increases with an increase in number of hidden units. This is because the model is becoming
+more and more complex which means it is overfitting to training data. Also, with increase in hidden
+
+
+8.
+
+Deciding the right learning rate is extremely crucial. If it is too small (like 0.001 in this case) the model may not
+converge within some number of epochs (100 in this case). If it is too large (like 0.1 in this case) the model may
+overshoot too quickly. So, taking a middle value (like 0.01) is a reasonable choice over 100 epochs on this data.
+
